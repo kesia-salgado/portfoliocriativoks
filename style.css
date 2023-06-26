@@ -1,0 +1,177 @@
+/*Todo o corpo  do site*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    background-size: cover;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+:root {
+    background: linear-gradient(to left, #feda00, #dbd8cd)
+}
+
+
+/*Estilização da header*/
+
+header {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: all ease .45s;
+}
+
+header h1 {
+    color: #5e042f;
+    font-size: 60px;
+    align-items: left;
+    justify-content: left;
+    padding-left: 0;
+}
+
+header span{
+    color:#5e042f
+}
+
+header .navegacao-primaria{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+header .navegacao-primaria li a{
+    padding: 10px;
+    font-size: 24px;
+    color:#5e042f; 
+    justify-content: space-around;
+}
+
+/*section currículo*/
+
+.section-div {
+    animation: inicializar .7s forwards;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    gap: 60px;
+    padding: 60px;
+}
+
+.section-div div {
+    margin-top: 120px;
+    align-self: start;
+    display: grid;
+    gap: 40px;
+}
+
+.section-div div h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color:#5e042f
+}
+.section-div div h3 {
+    font-size: 30px;
+    font-weight: 400;
+    color:#5e042f
+}
+
+.section-div div p {
+    font-size: 20px;
+    color: #5e042f;
+}
+
+.section-div div a {
+    justify-self: start;
+    color:#5e042f;
+    padding: 15px 40px;
+    border-radius: 5px;
+    border: 1px solid #5e042f;
+}
+
+.section-div img {
+    max-width: 100%;
+}
+
+.digitando::afte{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .5s infinite;
+}
+
+@keyframes pisca {
+    from {
+        opacity: 1;
+        
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes inicializar {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/*Seção sobre meu trabalho*/
+
+main .sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .sobre div carrossel{
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+main .sobre_titulo {
+    text-align: center;  
+}
+
+main .sobre_titulo h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color:#5e042f;
+    margin: 1% auto;
+}
+main .sobre div img{
+   display: center;
+   padding-left: 10px;
+   scroll-snap-align: start;
+   object-fit: cover;
+   height: 350px;
+   width: 350px;
+   flex-shrink: 0;
+}
+
+main .sobre-conteudo{
+    margin: 1% auto;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #5e042f;
+}
+
+
+
