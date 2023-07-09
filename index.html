@@ -6,7 +6,6 @@
     <link href="https:/fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Portfólio // Késia Salgado</title>
     <meta name = "keywords" content = "Késia Salgado, Késia, desenvolvedor, front end, fullstack, back end, diversidade, inclusão, recife, dev, mulheres, tecnologia">
 </head>
 <section>
@@ -15,8 +14,8 @@
         <nav>
             <ul class="navegacao-primaria">
                 <li><a href="#experiencias">Experiências</a></li>
-                <li><a href="#conhecimentos">Conhecimentos</a></li>
-                <li><a href="#falacomigo">Fala comigo</a></li>
+                <li><a href="#conhecimentos">Skills</a></li>
+                <li><a href="#conecte-se">Conecte-se</a></li>
             </ul>
         </nav>
     </header>
@@ -29,8 +28,8 @@
     </div>
     <img src="./midia/imagemapresentação.png" alt="imagem de késia salgado">
 </section>
-"<main>
-    <article aral-label="Seção sobre meu trabalho" class="sobre">
+<main>
+    <article aral-label="Seção sobre meu trabalho" class="sobre" id="experiencias">
         <div class="sobre_titulo">
         <h1>Experiências</h1>
         <div aria-label="seção de imagens de projetos">
@@ -52,21 +51,34 @@
             para o público dissidente deste setor.</p>
         </div>
     </div>
-    <div class="conhecimentos">
-    <div class="grid-layout">
-        <i class="fa-brands fa-html5">HTML5</i>
-        <i class="fa-brands fa-css3-alt">CSS</i>
-        <i class="fa-brands fa-js">.js</i>
-        <i class="fa-brands fa-node-js">Node.js</i>
-        <i class="fa-brands fa-npm">NPM</i>
-        <i class="fa-light fa-dumpster-fire">E-commerce</i>        
+    <div class="conhecimentos" id="conhecimentos">
+    <a class="grid-layout">
+        <h1>Skills</h1>
+        <h2>Passe o mouse em cima de cada icon e entenda o que cada um faz.</h2>
+        <a href="https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/HTML_basics">
+        <i class="fa-brands fa-html5 fa-border" onmouseover="showTooltip(this, 'HTML (Linguagem de Marcação de Hipertexto) é o código que você usa para estruturar uma página web e seu conteúdo. Como esse portfólio que você está visualizando.')" onmouseout="hideTootip(this)">HTML5</i></a>
+        <a href="https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/CSS_basics">
+        <i class="fa-brands fa-css3-alt fa-border" onmouseover="showTooltip(this,'CSS (Cascading Style Sheets) é uma linguagem de estilo usada para descrever a apresentação de um documento escrito em HTML. Esse portfólio foi estilizado todo em CSS.')" onmouseout="hideTootip(this)">CSS</i></a>
+        <a href="https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/What_is_JavaScript">
+        <i class="fa-brands fa-js fa-border" onmouseover="showTooltip(this,'JavaScript é uma linguagem de programação de alto nível, interpretada e multi-paradigma que permite a você adicionar interatividade a páginas web. Tipo isso que você está fazendo agora, por aqui.')" onmouseout="hideTootip(this)">.js</i></a>
+        <a href="https://www.totvs.com/blog/developers/node-js/">
+        <i class="fa-brands fa-node-js fa-border" onmouseover="showTooltip(this,'Node.js é uma tecnologia usada para executar código JavaScript fora do navegador.')" onmouseout="hideTootip(this)">Node.js</i></a>
+        <a href="https://rockcontent.com/br/blog/npm/">
+        <i class="fa-brands fa-npm fa-border" onmouseover="showTooltip(this,'NPM (Node Package Manager) é o gerenciador de pacotes padrão para o ecossistema do Node.js.')" onmouseout="hideTootip(this)">NPM</i></a>
+        <a href="https://www.hostgator.com.br/blog/git-o-sistema-de-controle/">
+        <i class="fa-brands fa-git fa-border" onmouseover="showTooltip(this,'O Git é um Sistema de Controle de Versão Distribuído que evita que alterações realizadas em um projeto modifiquem o código-fonte.')" onmouseout="hideTootip(this)"></i></a>
+        <div id="tooltip"></div>      
     </div>
 </div>
     </article>
 </main>
 <footer>
-    <div class="icones">
+    <div class="contato" id="conecte-se">
         <div class="contato">
+            <h1>Conecte-se</h1>
+            <p>Aqui é só um pouco do que você pode conhecer de mim.<br>
+                Mas eu quero conhecer você também, então, vamos nos conectar?
+            </p>
             <a class="whatsapp" href="https://api.whatsapp.com/send?phone=5581987545427">
                 <i class="fab fa-whatsapp"></i> Mensagens e ligações</a>          
             <a class="email" href="https://criarmeulink.com.br/u/1687728810">

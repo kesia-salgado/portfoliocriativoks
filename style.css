@@ -77,7 +77,7 @@ header .navegacao-primaria li a{
 .section-div div h2 {
     font-size: 40px;
     font-weight: 600;
-    color:#5e042f
+    color:#5e042f;
 }
 .section-div div h3 {
     font-size: 30px;
@@ -175,8 +175,87 @@ main .sobre-conteudo{
     color: #5e042f;
 }
 
-@media screen {
-    
+main .sobre_texto p{
+    font-size: 20px;
+    color: #5e042f;
+    padding: 60px;
+    padding-top: 1%;
+}
+/*Estilização Conhecimento com icons font awesome*/
+
+.conhecimentos{
+    display: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    color: #5e042f;  
 }
 
+.conhecimentos grid-layout h1 {
+    color: #5e042f;
+    font-size: 40px;
+    padding: 60px;
+    padding-top: 5%;
+    gap: 60px;    
+}
 
+.conhecimentos h2 {
+    padding-top: 1%;
+    font-size: 24px;
+    color: #5e042f;
+}
+
+.conhecimentos .fa-brands {
+    color: #5e042f;
+    font-size: 30px;
+    border: 1px solid #5e042f;
+    margin: 5px 15px;
+    padding: 5px;
+  }
+
+   #tooltip {
+    position: flex;
+    top: 0;
+    left: 0;
+    color: #5e042f;
+    padding: 5px;
+    display: none;
+    font-size: 24px;
+  }
+ 
+ /* estilização do footer*/
+
+ footer {
+    background-color: #5e042f;
+    padding: 20px;
+    color: #fff;
+    margin: 5% 15%;
+  }
+  
+  .contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: auto;
+  }
+  
+  .contato h1 {
+    margin-bottom: 10px;
+  }
+  
+  .contato p {
+    margin-bottom: 20px;
+  }
+  
+  .contato a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  
+  .contato i {
+    margin-right: 5px;
+  }
+  
+
+  
