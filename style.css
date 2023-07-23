@@ -23,11 +23,13 @@ body {
 /*Estilização da header*/
 
 header {
-    padding: 10px;
+    margin-bottom: 0%;
+    padding: 60px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     transition: all ease .45s;
+    
 }
 
 header h1 {
@@ -63,8 +65,8 @@ header .navegacao-primaria li a{
     grid-template-columns: 1fr 1fr;
     justify-content: space-around;
     align-items: center;
-    gap: 60px;
     padding: 60px;
+    
 }
 
 .section-div div {
@@ -188,6 +190,7 @@ main .sobre_texto p{
     flex-wrap: wrap;
     justify-content: flex-end;
     color: #5e042f;  
+    margin-bottom: 10%;
 }
 
 .conhecimentos grid-layout h1 {
@@ -226,12 +229,12 @@ main .sobre_texto p{
 
  footer {
     background-color: #5e042f;
-    padding: 20px;
     color: #fff;
-    margin: 5% 15%;
-  }
+    margin: 0% 0% #5e042f;
+ }
   
   .contato {
+    background-color: #5e042f;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -241,21 +244,41 @@ main .sobre_texto p{
   
   .contato h1 {
     margin-bottom: 10px;
+    font-size: 30px;
   }
   
   .contato p {
     margin-bottom: 20px;
+    font-size: 24px;
   }
   
   .contato a {
     color: #fff;
     text-decoration: none;
     margin-bottom: 10px;
+    font-size: 24px;
   }
   
   .contato i {
     margin-right: 5px;
   }
   
+  .icones {
+    display: flex; /* Display the icons in a row */
+    flex-wrap: wrap;
+  }
+
+  .icones a{
+    margin-right: 20px;
+  }
+
+  
+
+  @media screen and (max-width: 768px){
+    *{
+        width:100%;
+        flex-direction: column;
+    }
+  }
 
   
