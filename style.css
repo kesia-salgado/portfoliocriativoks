@@ -140,12 +140,24 @@ main .sobre {
     align-items: center;
 }
 
-main .sobre div carrossel{
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
+.carousel-container {
+    display: flex;
+    justify-content: space-between; /* Distribui as imagens igualmente no espaço disponível */
+    align-items: center; /* Centraliza verticalmente as imagens */
+    width: 100%; /* Ocupa todo o espaço disponível */
 }
-
+      
+.slide {
+    flex: 0 0 23%; /* Ajusta a largura de cada imagem com uma pequena margem entre elas */
+    margin-right: 2%; /* Define uma margem entre as imagens */
+    display: inline-block; /* Remove qualquer espaço extra entre as imagens */
+}
+      
+.slide img {
+    width: 100%; /* Garante que as imagens preencham seus contêineres */
+    height: auto; /* Mantém a proporção original da imagem */
+}      
+  
 main .sobre_titulo {
     text-align: center;  
 }
@@ -155,16 +167,6 @@ main .sobre_titulo h1 {
     font-weight: 600;
     color:#5e042f;
     margin: 1%;
-}
-main .sobre div img{
-   display: center;
-   padding-left: 10px;
-   scroll-snap-align: start;
-   object-fit: cover;
-   height: 360px;
-   width: 360px;
-   flex-shrink: 0;
-   border: 1% solid;
 }
 
 main .sobre-conteudo{
@@ -229,7 +231,7 @@ main .sobre_texto p{
 
  footer {
     background-color: #5e042f;
-    color: #fff;
+    color: #dbd8cd;
     margin: 0% 0% #5e042f;
  }
   
@@ -253,7 +255,7 @@ main .sobre_texto p{
   }
   
   .contato a {
-    color: #fff;
+    color: #dbd8cd;
     text-decoration: none;
     margin-bottom: 10px;
     font-size: 24px;

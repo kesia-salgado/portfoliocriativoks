@@ -27,3 +27,5 @@ function showTooltip(element, text) {
     const tooltip = document.getElementById('tooltip');
     tooltip.style.display = 'none';
   }
+
+  // script para carrossel de imagens//
