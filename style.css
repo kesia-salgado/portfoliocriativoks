@@ -252,7 +252,7 @@ main .sobre_texto p{
   .contato p {
     margin-bottom: 20px;
     font-size: 24px;
-  }
+}
   
   .contato a {
     color: #dbd8cd;
@@ -274,7 +274,10 @@ main .sobre_texto p{
     margin-right: 20px;
   }
 
-  
+  .contato h5 {
+    display: flex; 
+    padding: 10px;
+  }
 
   @media screen and (max-width: 768px){
     *{
