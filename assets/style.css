@@ -16,7 +16,7 @@ body {
 }
 
 :root {
-    background: linear-gradient(to left, #feda00, #dbd8cd)
+    background: linear-gradient(to left, #dbdbdb #feda00)
 }
 
 
@@ -163,7 +163,7 @@ main .sobre_titulo {
 }
 
 main .sobre_titulo h1 {
-    font-size: 40px;
+    font-size: 24px;
     font-weight: 600;
     color:#5e042f;
     margin: 1%;
@@ -211,7 +211,7 @@ main .sobre_texto p{
 
 .conhecimentos .fa-brands {
     color: #5e042f;
-    font-size: 30px;
+    font-size: 20px;
     border: 1px solid #5e042f;
     margin: 5px 15px;
     padding: 5px;
@@ -246,7 +246,7 @@ main .sobre_texto p{
   
   .contato h1 {
     margin-bottom: 10px;
-    font-size: 30px;
+    font-size: 24px;
   }
   
   .contato p {
@@ -278,12 +278,23 @@ main .sobre_texto p{
     display: flex; 
     padding: 10px;
   }
-
-  @media screen and (max-width: 768px){
-    *{
-        width:100%;
+  @media screen and (max-width: 768px) {
+    header {
         flex-direction: column;
     }
-  }
-
-  
+    .section-div {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    .carousel-container {
+        flex-direction: column;
+    }
+    .slide {
+        flex: 0 0 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .conhecimentos {
+        justify-content: center;
+    }
+}
